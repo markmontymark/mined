@@ -1,0 +1,33 @@
+{
+  "name": "mined",
+  "version": "1.0.0",
+  "description": "local daemon collecting stats from time to time",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^0.9.0",
+    "extend": "^2.0.0",
+    "forever": "^0.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "start": "./node_modules/.bin/forever start -a -l forever.log -o out.log -e err.log ./lib/mined.js",
+    "stop": "./node_modules/.bin/forever stop ./lib/mined.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:markmontymark/mined.git"
+  },
+  "keywords": [
+    "forever",
+    "daemon",
+    "local",
+    "info"
+  ],
+  "author": "Mark Koopman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markmontymark/mined/issues"
+  },
+  "homepage": "https://github.com/markmontymark/mined"
+}
