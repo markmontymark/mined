@@ -12,7 +12,9 @@
   "scripts": {
     "test": "mocha",
     "start": "./node_modules/.bin/forever start -a -l forever.log -o out.log -e err.log ./lib/mined.js",
-    "stop": "./node_modules/.bin/forever stop ./lib/mined.js"
+    "stop": "./node_modules/.bin/forever stop ./lib/mined.js",
+    "forever" : "./node_modules/.bin/forever",
+    "list" : "./node_modules/.bin/forever list"
   },
   "repository": {
     "type": "git",
