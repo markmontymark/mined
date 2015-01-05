@@ -6,15 +6,16 @@
   "dependencies": {
     "async": "^0.9.0",
     "extend": "^2.0.0",
-    "forever": "^0.14.0"
+    "forever": "^0.14.0",
+    "plist": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "mocha",
     "start": "./node_modules/.bin/forever start -a -l forever.log -o out.log -e err.log ./lib/mined.js",
     "stop": "./node_modules/.bin/forever stop ./lib/mined.js",
-    "forever" : "./node_modules/.bin/forever",
-    "list" : "./node_modules/.bin/forever list"
+    "forever": "./node_modules/.bin/forever",
+    "list": "./node_modules/.bin/forever list"
   },
   "repository": {
     "type": "git",
